@@ -7,7 +7,7 @@
   elements:
   - title: Scheduled Next 10 Days
     name: Scheduled Next 10 Days
-    model: TeleDoc_dashboard
+    model: teledoc_dashboard
     explore: __TeleDoc_queue_Next_X_days
     type: table
     fields:
@@ -58,7 +58,7 @@
     height: 7
   - title: Running!
     name: Running!
-    model: TeleDoc_dashboard
+    model: teledoc_dashboard
     explore: __TeleDoc_queue_Running_jobs
     type: table
     fields:
@@ -107,7 +107,7 @@
     height: 7
   - title: Overdue
     name: Overdue
-    model: TeleDoc_dashboard
+    model: teledoc_dashboard
     explore: __TeleDoc_queue_Overdue_jobs
     type: table
     fields:
@@ -162,7 +162,7 @@
     height: 7
   - title: Completed
     name: Completed
-    model: TeleDoc_dashboard
+    model: teledoc_dashboard
     explore: __TeleDoc_queue_Completed_jobs
     type: table
     fields:
@@ -211,7 +211,7 @@
     height: 7
   - title: TeleDoc Job Execution Status
     name: TeleDoc Job Execution Status
-    model: TeleDoc_dashboard
+    model: teledoc_dashboard
     explore: __TeleDoc_queue_success_fail
     type: looker_pie
     fields:
