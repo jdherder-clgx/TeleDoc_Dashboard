@@ -14,7 +14,7 @@
     - __TeleDoc_queue_Running_jobs.NAME
     - __TeleDoc_queue_Running_jobs.STATUS
     - __TeleDoc_queue_Running_jobs.CUSTOMER_NAME
-    - __TeleDoc_queue_Running_jobs.SCHEDULED_RUN_DATE
+    - __TeleDoc_queue_Running_jobs.START_DATE
     limit: 500
     show_view_names: false
     show_row_numbers: false
@@ -48,7 +48,7 @@
     totals_color: "#808080"
     series_types: {}
     series_labels:
-      __TeleDoc_queue_Running_jobs.SCHEDULED_RUN_DATE: Scheduled Date
+      __TeleDoc_queue_Running_jobs.START_DATE: Start Date
     refresh: '60000'
     row: 0
     col: 0
@@ -61,11 +61,11 @@
     type: table
     fields:
     - __TeleDoc_queue_Overdue_jobs.NAME
-    - __TeleDoc_queue_Overdue_jobs.SCHEDULED_RUN_DATE
+    - __TeleDoc_queue_Overdue_jobs.START_DATE
     - __TeleDoc_queue_Overdue_jobs.HOURS_OVERDUE
     - __TeleDoc_queue_Overdue_jobs.STATUS
     sorts:
-    - __TeleDoc_queue_Overdue_jobs.SCHEDULED_RUN_DATE desc
+    - __TeleDoc_queue_Overdue_jobs.START_DATE desc
     limit: 500
     column_limit: 50
     show_view_names: false
@@ -100,7 +100,7 @@
     totals_color: "#808080"
     series_types: {}
     series_labels:
-      __TeleDoc_queue_Overdue_jobs.SCHEDULED_RUN_DATE: Scheduled Date
+      __TeleDoc_queue_Overdue_jobs.START_DATE: Start Date
     refresh: '60000'
     note_state: collapsed
     note_display: hover
@@ -158,7 +158,7 @@
     col: 12
     width: 12
     height: 7
-  - title: TeleDoc Job Execution Status
+  - title: Execution Status
     name: TeleDoc Job Execution Status
     model: teledoc_dashboard
     explore: __TeleDoc_queue_success_fail

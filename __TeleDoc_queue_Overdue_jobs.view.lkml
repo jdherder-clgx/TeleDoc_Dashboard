@@ -6,7 +6,7 @@ view: __TeleDoc_queue_Overdue_jobs {
 
     select
       j.job_name as NAME
-    , je.start_date as SCHEDULED_RUN_DATE
+    , je.start_date as START_DATE
     , DATE_PART('day',   NOW() - je.start_date) * 24 +  DATE_PART('hour', NOW() - je.start_date) as HOURS_OVERDUE
     , je.job_status as STATUS
     , customer_name as CUSTOMER_NAME
@@ -25,9 +25,9 @@ view: __TeleDoc_queue_Overdue_jobs {
         type: string
         sql: ${TABLE}.NAME ;;
       }
-      dimension: SCHEDULED_RUN_DATE {
+      dimension: START_DATE {
         type: date_time
-        sql: ${TABLE}.SCHEDULED_RUN_DATE ;;
+        sql: ${TABLE}.START_DATE ;;
       }
       dimension: HOURS_OVERDUE {
         type: number

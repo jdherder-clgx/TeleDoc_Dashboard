@@ -5,7 +5,7 @@ view: __TeleDoc_queue_Running_jobs {
     sql:
     select
       j.job_name as NAME
-    , je.start_date as SCHEDULED_RUN_DATE
+    , je.start_date as START_DATE
     , je.job_status as STATUS
     , customer_name as CUSTOMER_NAME
     from public.job j
@@ -20,9 +20,9 @@ view: __TeleDoc_queue_Running_jobs {
         type: string
         sql: ${TABLE}.NAME ;;
       }
-      dimension: SCHEDULED_RUN_DATE {
+      dimension: START_DATE {
         type: date_time
-        sql: ${TABLE}.SCHEDULED_RUN_DATE ;;
+        sql: ${TABLE}.START_DATE ;;
       }
       dimension: STATUS {
         type: string
