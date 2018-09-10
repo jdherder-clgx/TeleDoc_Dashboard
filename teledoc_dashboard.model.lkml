@@ -3,6 +3,10 @@ connection: "looker-teledoc-preprod"
 # include all the views
 include: "*.view"
 
+#Added
+include: "*.dashboard.lookml"
+# include all dashboards in this project
+
 datagroup: teledoc_dashboard_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"

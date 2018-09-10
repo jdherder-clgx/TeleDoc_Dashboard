@@ -115,8 +115,6 @@
     - __TeleDoc_queue_Overdue_jobs.SCHEDULED_RUN_DATE
     - __TeleDoc_queue_Overdue_jobs.HOURS_OVERDUE
     - __TeleDoc_queue_Overdue_jobs.STATUS
-    filters:
-      __TeleDoc_queue_Overdue_jobs.NAME: "-EMPTY"
     sorts:
     - __TeleDoc_queue_Overdue_jobs.SCHEDULED_RUN_DATE desc
     limit: 500
@@ -257,14 +255,3 @@
     col: 10
     width: 5
     height: 7
-  filters:
-  - name: Overdue jobs
-    title: Overdue jobs
-    type: field_filter
-    default_value: "-EMPTY"
-    allow_multiple_values: true
-    required: false
-    model: TeleDoc_dashboard
-    explore: __TeleDoc_queue_Overdue_jobs
-    listens_to_filters: []
-    field: __TeleDoc_queue_Overdue_jobs.NAME
