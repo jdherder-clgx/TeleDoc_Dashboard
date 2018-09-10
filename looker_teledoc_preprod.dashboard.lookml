@@ -56,8 +56,8 @@
     col: 0
     width: 12
     height: 7
-  - title: Running!
-    name: Running!
+  - title: Executing
+    name: Executing
     model: teledoc_dashboard
     explore: __TeleDoc_queue_Running_jobs
     type: table
@@ -155,7 +155,7 @@
     refresh: '60000'
     note_state: collapsed
     note_display: hover
-    note_text: All overdue jobs, including test
+    note_text: All overdue jobs, including test, last 30 days
     row: 0
     col: 15
     width: 9

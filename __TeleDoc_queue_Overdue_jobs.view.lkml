@@ -17,7 +17,7 @@ view: __TeleDoc_queue_Overdue_jobs {
     je.start_date < NOW()
     and je.job_status <> 'JOB_COMPLETED'
     and je.id = (select MAX(x.id) from public.job_execution x where x.job_id = j.id )
-    and (je.start_date is not null and je.start_date >= current_date - interval '20 days') /* 30 days is arbitrary but seems to be enough */
+    and (je.start_date is not null and je.start_date >= current_date - interval '30 days') /* 30 days is arbitrary but seems to be enough */
     order by  je.start_date desc
         ;;  }
 
