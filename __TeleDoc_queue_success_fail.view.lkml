@@ -2,7 +2,7 @@ view: __TeleDoc_queue_success_fail {
 
   derived_table: {
     sql:
--- percentage, two decimal points, succeeded as Successful or Failed
+
     with cte_job_execution as(
       select  cast( ( coalesce(   job_status, ' ' ) ) as varchar ) as job_status
       from  public.job_execution je
