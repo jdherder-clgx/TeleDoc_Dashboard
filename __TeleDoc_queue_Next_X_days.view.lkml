@@ -4,7 +4,7 @@ view: __TeleDoc_queue_Next_X_days {
   derived_table: {
     sql:
       select
-      j.job_name as JOB_NAME
+      j.job_name as NAME
     --, j.schedule_date_time as SCHEDULED_RUN_DATE
     , je.end_date as MOST_RECENT_EXECUTION_DATE
     , je.job_status as STATUS
@@ -28,7 +28,7 @@ view: __TeleDoc_queue_Next_X_days {
     order by j.id --, j.schedule_date_time desc
       ;;  }
 
-      dimension: JOB_NAME {
+      dimension: NAME {
         type: string
         sql: ${TABLE}.JOB_NAME ;;
       }

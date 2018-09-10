@@ -11,7 +11,7 @@
     explore: __TeleDoc_queue_Next_X_days
     type: table
     fields:
-    - __TeleDoc_queue_Next_X_days.JOB_NAME
+    - __TeleDoc_queue_Next_X_days.NAME
     - __TeleDoc_queue_Next_X_days.MOST_RECENT_EXECUTION_DATE
     - __TeleDoc_queue_Next_X_days.STATUS
     - __TeleDoc_queue_Next_X_days.CUSTOMER_NAME
