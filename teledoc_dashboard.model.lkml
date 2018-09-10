@@ -11,20 +11,6 @@ datagroup: teledoc_dashboard_default_datagroup {
 persist_with: teledoc_dashboard_default_datagroup
 
 ###################
-#  MODEL name:  TeleDoc_metrics
-
-#  EXPLORE name: TeleDoc METRICS
-
-#  TeleDoc queue Next X days
-
-#  TeleDoc queue Success or Failure overview
-
-#  TeleDoc queue Overdue jobs
-
-#  TeleDoc queue Running jobs
-
-#  TeleDoc queue Completed jobs
-
 
 # Create an explorable item based on the "__TeleDoc_queue_Next_X_days" view
 explore: __TeleDoc_queue_Next_X_days {
