@@ -30,7 +30,7 @@ view: __TeleDoc_queue_Next_X_days {
 
       dimension: NAME {
         type: string
-        sql: ${TABLE}.JOB_NAME ;;
+        sql: ${TABLE}.NAME ;;
       }
       # dimension: SCHEDULED_RUN_DATE {
       #   type: date_time
