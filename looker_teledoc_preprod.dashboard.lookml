@@ -61,7 +61,7 @@
     type: table
     fields:
     - __TeleDoc_queue_Overdue_jobs.NAME
-    - __TeleDoc_queue_Overdue_jobs.START_DATE
+    - __TeleDoc_queue_Overdue_jobs.SCHEDULED_RUN_DATE
     - __TeleDoc_queue_Overdue_jobs.HOURS_OVERDUE
     - __TeleDoc_queue_Overdue_jobs.STATUS
     sorts:
