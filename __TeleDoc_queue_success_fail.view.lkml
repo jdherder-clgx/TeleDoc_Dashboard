@@ -11,7 +11,7 @@ view: __TeleDoc_queue_success_fail {
     ) select
       case
         when job_status = 'JOB_COMPLETED' then 'Successful'
-        when job_status like  '%FAIL%'  then 'Failed'
+        when job_status like  '%ERROR%'  then 'Failed'
         else 'Incomplete'
       end as EXECUTION_STATUS,
       round(( count( job_status )* 100.0 /( select count(*) from cte_job_execution ))::numeric, 2 ) as PERCENTAGE
