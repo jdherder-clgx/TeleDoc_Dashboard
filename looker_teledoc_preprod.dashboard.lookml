@@ -1,7 +1,7 @@
 - dashboard: looker-teledoc-preprod
-  title: TeleDoc Dashboard
+  title: TeleDoc Dashboard PREPROD
   layout: newspaper
-  description: TeleDoc Dashboard from TDOC-stg source.
+  description: TeleDoc Dashboard PREPROD from TDOC-stg source.
   refresh: 10 minutes
   auto_run: true
   elements:
