@@ -4,7 +4,7 @@ view: __TeleDoc_queue_Completed_jobs {
   derived_table: {
     sql:
     select
-      j.job_name  as NAME
+      j.job_name   as NAME
     , je.end_date as COMPLETED_DATE
     , je.job_status as STATUS
     , c.customer_name as CUSTOMER_NAME
